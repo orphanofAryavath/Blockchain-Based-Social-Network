@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Web3 from 'web3';
-import Identicon from 'identicon.js';
 import './App.css';
 import SocialNetwork from '../abis/SocialNetwork.json'
 import Navbar from './Navbar'
@@ -78,8 +77,7 @@ class App extends Component {
       account: '',
       socialNetwork: null,
       postCount: 0,
-      posts: [],
-      loading: true
+      posts: []
     }
 
     this.createPost = this.createPost.bind(this)
@@ -88,11 +86,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="body">
         <Navbar account={this.state.account} />
-        { this.state.loading
-          ? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
-          : <Main
+        {  <Main
               posts={this.state.posts}
               createPost={this.createPost}
               tipPost={this.tipPost}

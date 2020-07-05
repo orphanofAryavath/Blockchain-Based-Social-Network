@@ -5,7 +5,7 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="container-fluid mt-5">
+      <div className="container-fluid mt-5 body">
         <div className="row">
           <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '500px' }}>
             <div className="content mr-auto ml-auto">
@@ -24,12 +24,12 @@ class Main extends Component {
                     placeholder="What's on your mind?"
                     required />
                 </div>
-                <button type="submit" className="btn btn-primary btn-block">Share</button>
+                <button type="submit" className="btn btn-primary sumbit">Share</button>
               </form>
               <p>&nbsp;</p>
               { this.props.posts.map((post, key) => {
                 return(
-                  <div className="card mb-4" key={key} >
+                  <div className="card mb-4 box" key={key} >
                     <div className="card-header">
                       <img
                         className='mr-2'
@@ -56,7 +56,7 @@ class Main extends Component {
                             this.props.tipPost(event.target.name, tipAmount)
                           }}
                         >
-                          TIP 0.1 ETH
+                          TIP 0.1 ETH For Upvote
                         </button>
                       </li>
                     </ul>

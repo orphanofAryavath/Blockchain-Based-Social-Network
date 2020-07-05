@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Identicon from 'identicon.js';
+import {FaBeer} from 'react-icons/fa';
 
 class Navbar extends Component {
 
@@ -7,13 +8,11 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
         <a
-          className="navbar-brand col-sm-3 col-md-2 mr-0"
-         href="http://www.dappuniversity.com/bootcamp"
-          target="_blank"
-          rel="noopener noreferrer"
+          className="navbar-brand col-sm-0 col-md-1 mr-0"
+         href="https://github.com/orphanofAryavath"
     
         >
-        HOlY SHIT
+        <FaBeer/>
         </a>
         <ul className="navbar-nav px-3">
           <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
